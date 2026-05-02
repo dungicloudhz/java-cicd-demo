@@ -18,9 +18,12 @@ public class ProductController {
             new Product(3L, "Keyboard", 79.99),
             new Product(4L, "Monitor", 349.99),
             new Product(5L, "Headset", 89.99),
-            new Product(6L, "Webcam", 59.99)
+            new Product(6L, "Webcam", 59.99),
+            new Product(7L, "USB Hub", 39.99),
+            new Product(8L, "SSD 1TB", 119.99),
+            new Product(9L, "Mousepad XL", 24.99)
     ));
-    private final AtomicLong idCounter = new AtomicLong(7);
+    private final AtomicLong idCounter = new AtomicLong(10);
 
     @GetMapping
     public List<Product> getAll() {
