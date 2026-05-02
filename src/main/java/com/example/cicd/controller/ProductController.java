@@ -15,9 +15,12 @@ public class ProductController {
     private final List<Product> products = new ArrayList<>(List.of(
             new Product(1L, "Laptop", 999.99),
             new Product(2L, "Mouse", 29.99),
-            new Product(3L, "Keyboard", 79.99)
+            new Product(3L, "Keyboard", 79.99),
+            new Product(4L, "Monitor", 349.99),
+            new Product(5L, "Headset", 89.99),
+            new Product(6L, "Webcam", 59.99)
     ));
-    private final AtomicLong idCounter = new AtomicLong(4);
+    private final AtomicLong idCounter = new AtomicLong(7);
 
     @GetMapping
     public List<Product> getAll() {
